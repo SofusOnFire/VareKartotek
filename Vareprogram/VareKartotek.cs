@@ -16,12 +16,12 @@ namespace Vareprogram
             VareListe = vareListe;
         }
 
-        public void IndSaet(VareKartotek vareListe, Vare vare)
+        public void IndSaet(Vare vare)
         {
             VareListe.Add(vare);
         }
 
-        public void Slet(VareKartotek vareKartotek, int vareNr)
+        public void Slet(int vareNr)
         {
             foreach (Vare vare in VareListe)
             {
@@ -45,7 +45,7 @@ namespace Vareprogram
             return sum;
         }
 
-        public void PrintVare(VareKartotek vareKartotek, int vareNr)
+        public void PrintVare(int vareNr)
         {
             foreach (Vare vare in VareListe)
             {
